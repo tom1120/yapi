@@ -51,7 +51,7 @@ class FootItem extends Component {
         {this.props.linkList.map(function(item, i) {
           return (
             <p key={i}>
-              <a href={item.itemLink} className="link">
+              <a href={item.itemLink} className="link" target="_blank">
                 {item.itemTitle}
               </a>
             </p>
@@ -110,7 +110,17 @@ Footer.defaultProps = {
           itemLink: 'https://hellosean1025.github.io/yapi/'
         }
       ]
+    },
+     {
+      title: '工信部备案',
+      linkList: [
+        {
+          itemTitle: "粤ICP备12030994号",
+          itemLink: 'https://beian.miit.gov.cn'
+        }
+      ]
     }
+
   ]
 };
 
